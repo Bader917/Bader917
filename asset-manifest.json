@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Bader917/static/css/main.79d7b627.css",
+    "main.js": "/Bader917/static/js/main.e54c7580.js",
+    "static/media/2.png": "/Bader917/static/media/2.b810024430d376b6bd6d.png",
+    "static/media/5.jpg": "/Bader917/static/media/5.6a2eedf4ba913e5b525b.jpg",
+    "static/media/3.jpg": "/Bader917/static/media/3.ea0c6ec782280a043c3e.jpg",
+    "static/media/1.jpg": "/Bader917/static/media/1.08fbede0b41a4b92b707.jpg",
+    "static/media/2.jpg": "/Bader917/static/media/2.a0285cd4de1ecfe86f94.jpg",
+    "index.html": "/Bader917/index.html",
+    "main.79d7b627.css.map": "/Bader917/static/css/main.79d7b627.css.map",
+    "main.e54c7580.js.map": "/Bader917/static/js/main.e54c7580.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79d7b627.css",
+    "static/js/main.e54c7580.js"
+  ]
+}

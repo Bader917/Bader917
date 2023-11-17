@@ -1,0 +1,12 @@
+.App {
+    height: 100%;
+}
+
+.App .app-main-page-content {
+    height: calc(100% - 60px);
+}
+
+#particles {
+    position: absolute;
+    z-index: -999;
+}

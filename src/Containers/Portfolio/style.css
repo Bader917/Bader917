@@ -1,0 +1,200 @@
+.portfolio .portfolio-content {
+    padding: 20px;
+}
+
+.portfolio .portfolio-content .portfolio-content-filtter {
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.portfolio .portfolio-content .portfolio-content-filtter li {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    color: var(--blue-theme-main-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: -1px 0px 10px 0px #aaaaaa;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+.portfolio .portfolio-content .portfolio-content-filtter li.active {
+    color: #000;
+    background-color: var(--blue-theme-dub-text-color);
+}
+
+.portfolio-content-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+.portfolio-content-cards-item {
+    height: 366px;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-content-cards-item .portfolio-content-cards-item-img-wrapper,
+.portfolio-content-cards-item .portfolio-content-cards-item-img-wrapper a {
+    height: 100%;
+}
+
+.portfolio-content-cards-item .portfolio-content-cards-item-img-wrapper a img {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--blue-theme-main-color);
+    border-radius: 20px;
+}
+
+.overly {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    border-radius: 20px;
+    background-color: var(--blue-theme-main-color);
+}
+
+
+.portfolio-content-cards-item:hover .overly {
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+
+.overly div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overly div p {
+    color: #fff;
+    margin: 0;
+    font-size: 2rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typeEffect 1s steps(30, end);
+}
+
+.overly .link-handle button {
+    cursor: pointer;
+    margin-top: 16px;
+    padding: 6px 50px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.overly .link-handle button a {
+    color: var(--blue-theme-dub-text-color);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+@keyframes typeEffect {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Media Query Settings For Mobile */
+@media only screen and (max-width: 550px) {
+
+    .portfolio-content-filtter {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .portfolio .portfolio-content .portfolio-content-filtter {
+        padding-left: 0 !important;
+    }
+
+    .portfolio .portfolio-content .portfolio-content-filtter li {
+        width: 75% !important;
+        font-size: 21px !important;
+        margin: 5px auto;
+    }
+    
+    .portfolio-content-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .overly div p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .overly div button {
+        padding: 0 30px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+
+    .portfolio-content-filtter {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .portfolio-content-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio .portfolio-content .portfolio-content-filtter {
+        padding-left: 0 !important;
+    }
+
+    .portfolio .portfolio-content .portfolio-content-filtter li {
+        width: 75% !important;
+        font-size: 17px !important;
+        margin: 5px auto;
+    }
+
+    .overly div p {
+        font-size: 1.3rem !important;
+        font-weight: 500;
+    }
+
+    .overly div button {
+        padding: 0 30px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .overly div p {
+        font-size: 1.25rem !important;
+        font-weight: 500;
+    }
+
+    .overly div button {
+        padding: 0 30px;
+        font-size: 1.5rem;
+    }
+}

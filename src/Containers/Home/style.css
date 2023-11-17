@@ -1,0 +1,99 @@
+.home {
+    height: 100vh;
+    position: relative;
+}
+
+.home .home-text-wrapper h2 {
+    color: var(--blue-theme-main-color);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0;
+    animation: typingEffect 2.5s steps(30, end);
+}
+
+@keyframes typingEffect {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+.home-contact-me {
+    padding: 20px 0;
+}
+
+.home-contact-me button {
+    background-color: transparent;
+    color: var(--blue-theme-main-color);
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+.home-contact-me button:hover {
+    background-color: var(--blue-theme-main-color);
+    color: #1e1e1e;
+}
+
+.home-contact-me button:hover a {
+    color: #1e1e1e;
+}
+
+.home-contact-me button a {
+    text-decoration: none;
+    color: var(--blue-theme-main-color);
+}
+
+
+/* Media Query Settings For Mobile */
+@media only screen and (max-width: 550px) {
+    .home .home-text-wrapper h2 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .home-contact-me button {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+    .home .home-text-wrapper h2 {
+        font-size: 45px;
+        line-height: 60px;
+        font-weight: 500;
+    }
+
+    .home-contact-me button {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 8px 14px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    .home .home-text-wrapper h2 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .home-contact-me button {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 10px 20px;
+    }
+}

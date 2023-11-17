@@ -1,0 +1,17 @@
+.timeline {
+    margin: 50px auto;
+    box-shadow: -1px 0px 10px 0px #aaaaaa;
+    border-radius: 8px;
+}
+
+.timeline p {
+    width: 75%;
+    margin: auto;
+    color: var(--blue-theme-dub-text-color);
+}
+
+@media only screen and (max-width: 550px) {
+    .timeline {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,30 @@
+:root {
+    --blue-theme-background-color: #2e2e2e;
+    --blue-theme-main-color: #0075ff;
+    --blue-theme-dub-text-color: #fff;
+    --blue-theme-nav-background-color: #292929;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.container {
+    max-width: 95%;
+}
